@@ -1,0 +1,119 @@
+
+h3 {
+  font-weight: normal;
+}
+
+table {
+  font-size: 20px;
+}
+
+
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  /*background: beige;*/
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  /*background: yellowgreen;*/
+  /*height: 20vh;*/
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
+@media screen and (min-width: 700px) {
+	header, footer {
+		height: auto !important;
+	}
+  #main {
+    flex-direction: row;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }  
+}
+
+
+td {
+	padding: 6px;
+}
+
+thead {
+	font-weight: bold;
+	background-color:#f5f5f5;
+}
+
+tr:nth-of-type(even) {
+	background-color:#f5f5f5;
+}	
+
+table {
+	border-spacing: 0px !important; 
+}
+
+
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+
+button {
+  background-color: #050505
+}
+.button {
+  display: block
+  background-color:#f5f5f5 !important;
+  color: #f5f5f5;
+  padding: 12px;
+  font-size: 18px;
+  border-radius:3px;
+  cursor: pointer; 
+  }
+
+
+
+.sidebar { 
+  padding: 15px;
+  font-size: 24px;
+}
+
+ul {
+
+  padding-inline-start: 0px;
+}
+  
+li { /* styles all li elements*/
+  list-style-type: none;
+  list-style-position: inside;
+
+  margin: 8px;
+}
+
+li:hover{
+  background-color: #f5f5f5;
+}
